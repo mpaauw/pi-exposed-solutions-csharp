@@ -27,15 +27,23 @@ public class Stack<T>
 
     public T peek()
     {
-        return this.top.getData();
+        if(this.size > 0)
+        {
+            return this.top.getData();
+        }
+        return default(T);
     }
 
     public T pop()
     {
-        Node<T> oldTop = this.top;
-        this.top = this.top.getNext();
-        this.size--;
-        return oldTop.getData();
+        if(this.size > 0)
+        {
+            Node<T> oldTop = this.top;
+            this.top = this.top.getNext();
+            this.size--;
+            return oldTop.getData();
+        }
+        return default(T);
     }
 
     public int getSize()
