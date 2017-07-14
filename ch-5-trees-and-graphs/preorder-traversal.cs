@@ -1,8 +1,8 @@
-public static void preOrderTraversal(Node root) {
+public static void preorderTraversal(Node root) {
     recurseTraversal(root);
 }
 
-private void recurseTraversal(Node root) {
+private static void recurseTraversal(Node root) {
     if(root == null) {
         return;
     }

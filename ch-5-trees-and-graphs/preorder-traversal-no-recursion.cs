@@ -12,7 +12,7 @@ public static void preorderTraversalIterative(Node node)
         }
         if (node.status.Equals("unvisited"))
         {
-            System.Diagnostics.Debug.WriteLine(node.value);
+            Console.WriteLine(node.value);
             node.status = "visiting";
         }
         if (node.left != null && node.left.status.Equals("unvisited"))
