@@ -14,7 +14,6 @@ public static string convertIntToString(int num)
     }
     if (signed)
     {
-
         builder.Insert(0, '-');
     }
     return builder.ToString();
